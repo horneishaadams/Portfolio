@@ -13,7 +13,7 @@
         115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
     --transparent-light-color: rgba(255,255,255,.05);
     --transparent-dark-color: rgba(0,0,0,.75);
-    --font-family: "Libertinus Serif Display", system-ui;
+    --font-family: "Tinos", serif;
     --font-size-xsm: 1.2rem;
     --font-size-sm: 1.6rem;
     --font-size-md: 2.4rem;
@@ -87,6 +87,12 @@ body.light-theme{
     padding: 0 1.5rem;
 }
 
+.container2{
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
 .place-items-center{
     display: inline-flex;
     align-items: center;
@@ -139,7 +145,7 @@ body.light-theme{
 }
 
 .list{
-    display: grid;
+    display: flex;
     align-items: center;
     gap: var(--gap);
 }
@@ -150,6 +156,10 @@ body.light-theme{
 
 .list-link.current{
     color: var(--light-color);
+}
+
+.list-item{
+    font-size: var(--font-size-sm);
 }
 
 .close-menu-icon{
@@ -355,7 +365,7 @@ body.light-theme{
     top: 1rem;
     right: 1rem;
     padding: 1rem;
-    background-color:var(--primary-background-color);
+    background-color:var(--secondary-background-color);
     font-size: 1rem;
     color: var(--light-color);
     text-transform: uppercase;
